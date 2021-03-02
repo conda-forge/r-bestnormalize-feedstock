@@ -26,21 +26,25 @@ requirements:
   host:
     - r-base
     - r-lambertw >=0.6.5
+    - r-butcher
     - r-doparallel
     - r-dorng
     - r-dplyr
     - r-foreach
     - r-nortest
+    - r-purrr
     - r-recipes
     - r-tibble
   run:
     - r-base
     - r-lambertw >=0.6.5
+    - r-butcher
     - r-doparallel
     - r-dorng
     - r-dplyr
     - r-foreach
     - r-nortest
+    - r-purrr
     - r-recipes
     - r-tibble
 
