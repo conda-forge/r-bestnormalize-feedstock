@@ -1,4 +1,4 @@
-{% set version = "1.7.0" %}
+{% set version = "1.8.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bestNormalize_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bestNormalize/bestNormalize_{{ version }}.tar.gz
-  sha256: c770834bf28f155f236d0f147167a90055fc34c059d6baf606f01d2ce3f1cee4
+  sha256: a908a6e154b45ca845aa3597ca7910290b39e41e42b80a345f59bca802c599d8
 
 build:
   merge_build_host: true  # [win]
