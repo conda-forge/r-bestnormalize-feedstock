@@ -1,11 +1,11 @@
-About r-bestnormalize
-=====================
+About r-bestnormalize-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-bestnormalize-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/petersonR/bestNormalize
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-bestnormalize-feedstock/blob/main/LICENSE.txt)
 
 Summary: Estimate a suite of normalizing transformations, including a new adaptation of a technique based on ranks which can guarantee normally distributed transformed data if there are no ties: ordered quantile normalization (ORQ). ORQ normalization combines a rank-mapping approach with a shifted logit approximation that allows the transformation to work on data outside the original domain. It is also able to handle new data within the original domain via linear interpolation. The package is built to estimate the best normalizing transformation for a vector consistently and accurately. It implements the Box-Cox transformation, the Yeo-Johnson transformation, three types of Lambert WxF transformations, and the ordered quantile normalization transformation. It also estimates the normalization efficacy of other commonly used transformations, and finally it allows users to specify custom transformations or normalization statistics.
 
