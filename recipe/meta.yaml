@@ -1,4 +1,4 @@
-{% set version = "1.9.0" %}
+{% set version = "1.9.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bestNormalize_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bestNormalize/bestNormalize_{{ version }}.tar.gz
-  sha256: ed8dbcb63e45d5a30e5752709cbad54777815dc0cec215f770ae10ccd51ae04f
+  sha256: 9e4a19e0ad440e40a03069468e42fd1f4cfa24e4cca2a2e6b1a1b82d87a03ed3
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
