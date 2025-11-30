@@ -1,4 +1,4 @@
-{% set version = "1.9.1" %}
+{% set version = "1.9.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bestNormalize_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bestNormalize/bestNormalize_{{ version }}.tar.gz
-  sha256: 9e4a19e0ad440e40a03069468e42fd1f4cfa24e4cca2a2e6b1a1b82d87a03ed3
+  sha256: e5b0ad5ed2a39d420a70b3713e217c0e4cb0abc5e471a695f9079b446ca67ee0
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
