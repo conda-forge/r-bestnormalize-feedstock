@@ -17,10 +17,15 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-lambertw >=0.6.5
@@ -29,7 +34,9 @@ requirements:
     - r-dorng
     - r-dplyr
     - r-foreach
+    - r-generics
     - r-nortest
+    - r-progress
     - r-purrr
     - r-recipes
     - r-tibble
@@ -41,7 +48,9 @@ requirements:
     - r-dorng
     - r-dplyr
     - r-foreach
+    - r-generics
     - r-nortest
+    - r-progress
     - r-purrr
     - r-recipes
     - r-tibble
